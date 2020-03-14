@@ -1,0 +1,12 @@
+jupyterlab
+jupyterhub==1.2.5
+2to3
+imageio
+tensorflow-datasets
+urllib3
+transformers
+cufflinks
+plotly
+psutil
+pandas==1.0.1
+nni
