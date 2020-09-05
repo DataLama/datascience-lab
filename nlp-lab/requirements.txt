@@ -1,0 +1,12 @@
+jupyterhub
+jupyterlab
+2to3
+torch
+tensorflow-cpu
+tensorflow-datasets
+transformers
+cufflinks
+pandas
+plotly
+nlp
+nni
