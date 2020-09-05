@@ -1,14 +1,14 @@
 # Docker for DataScientists.
 My docker container for datascience.
 
-
-## Main features
+---
+## DataScience docker
+### Main feature
 - Base docker image is [deepo](https://github.com/ufoym/deepo)
 - Set **Jupyterlab** and install **jupyterlab extensions**.
 - Install **orca** docker container to fully use data visualization package **plotly**.
 
-## Details
-### Quickstart
+### QuickStart
 **build docker image**
 ```bash
 sudo docker build --tag datalama/deepo:lab .
@@ -24,7 +24,6 @@ sudo docker run -itd -p 8888:8888 -p 6006-6015:6006-6015 --name lab --ipc=host d
 ```bash
 docker exec -it lab /bin/zsh
 ```
-
 
 ### [Jupyterlab extension list](https://github.com/topics/jupyterlab-extension?fbclid=IwAR1rMRoJU-PQEng5cJX7aHvUAOF6ifecASC6Tz61unE07kxNbtjIDa4XMiE)
 
@@ -59,3 +58,12 @@ Sometimes, it is hard to build docker images with installing jupyterlab extensio
 If you use plotly to EDA or visualize your data, sometimes you may want to export your figure. At that time, you need the [orca(Electron app)](https://github.com/plotly/orca). Howerver, running orca in your container is a little bit tricky(chromium issue).
 
 I recommend referring to this [notebook]().
+
+
+## NLP docker
+### QuickStart
+```bash
+docker run -itd -p 8888:8888  --name nlp-lab --ipc=host  datalama/lab:v2 jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+```
+
+- jupyter 관련해서 좀 더 잘 사용하는 법을 알아보자
